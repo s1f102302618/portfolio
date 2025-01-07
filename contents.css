@@ -1,0 +1,118 @@
+.sidebar ul {
+    display: flex; /* 横並びにする */
+    justify-content: space-around; /* アイテムを均等配置 */
+    padding: 0;
+    margin: 0;
+    background-color: #333; /* サイドバー背景色 */
+    list-style-type: none; /* リストマーカー削除 */
+}
+
+.sidebar li {
+    flex: 1; /* 各リンクが均等に幅を取る */
+    text-align: center; /* テキストを中央揃え */
+}
+
+.sidebar a {
+    display: block; /* aタグをブロック要素化 */
+    padding: 15px 10px; /* パディング調整 */
+    color: #fff !important; /* リンクの文字色を白くする */
+    text-decoration: none; /* 下線を削除 */
+}
+
+.sidebar a:hover {
+    background-color: #555; /* ホバー時の背景色変更 */
+}
+    
+/* 全体のコンテナスタイル */
+.container {
+    display: flex;
+    flex-direction: column; /* サイドバーとメインコンテンツを縦に並べる */
+}
+    
+/* サイドバーのスタイル */
+.sidebar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+    
+.sidebar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+    
+.sidebar li {
+    text-align: center;
+}
+    
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+    
+.sidebar a:hover {
+    background-color: #555;
+}
+    
+/* css/index.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar {
+    flex: 1 1 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* メインコンテンツのスタイル */
+.main-content {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 縦方向の中央揃え */
+    gap: 20px; /* 写真と文字の間隔 */
+}
+
+.main-content img {
+    max-width: 300px; /* 写真の最大幅 */
+    height: auto; /* アスペクト比を維持 */
+    border: 2px solid #ddd; /* 写真の枠線 */
+    border-radius: 8px; /* 写真の角を丸くする */
+}
+
+.main-content p {
+    font-size: 16px; /* テキストのサイズ */
+    line-height: 1.5; /* テキストの行間 */
+    color: #333; /* テキストの色 */
+}
+
